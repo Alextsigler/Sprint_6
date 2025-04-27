@@ -2,6 +2,7 @@ import allure
 import pytest
 
 
+@allure.feature('Tests_Questions')
 class TestMain:
 
     @allure.title('Проверка всех вопросов и ответов с параметризацией')

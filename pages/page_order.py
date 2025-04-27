@@ -4,7 +4,6 @@ from locators.locators_main_page import LocatorsMain
 from locators.locators_order_page import LocatorsOrder
 from pages.base_page import BasePage
 import helpers
-import time
 
 
 class PageOrder(BasePage):

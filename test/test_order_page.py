@@ -2,6 +2,7 @@ import allure
 import pytest
 
 
+@allure.feature('Tests_Order')
 class TestOrder:
 
     @pytest.mark.parametrize('name, last_name, adress, text, check, comment', [

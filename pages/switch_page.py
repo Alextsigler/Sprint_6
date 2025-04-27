@@ -26,3 +26,8 @@ class SwitchPage(BasePage):
     def wait_element_samokat(self):
         self.find_element_with_wait(LocatorsSwitch.TEXT_SAMOKAT)
 
+    @allure.step('Получаем нынешний URL страницы')
+    def get_current_url(self):
+        URL = self.driver.current_url
+        return URL
+

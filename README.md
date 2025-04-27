@@ -2,6 +2,10 @@
 
 установка allure = https://allurereport.org/docs/install-for-macos/
 pip install -r requirements.txt - установка зависимостей
+pytest test/ --alluredir=allure_results  - запуск тестов с отчетом allure
+allure serve allure_results - открытие отчета в UI
+pytest test/ - запуст тестов без отчета allure
+allure generate allure_results - генерация отчета для открытия на другом устройстве
 
 test_main_page.py - тесты вопросов на главной странице
 test_order_page.py - тесты заказов через кнопки на главной странице в headers и body

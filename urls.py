@@ -1,2 +1,3 @@
-url_global = "https://qa-scooter.praktikum-services.ru/"
-url_order = "https://qa-scooter.praktikum-services.ru/order"
+URL_GLOBAL = "https://qa-scooter.praktikum-services.ru/"
+URL_ORDER = "https://qa-scooter.praktikum-services.ru/order"
+URL_DZEN = "https://dzen.ru/?yredirect=true"

@@ -27,8 +27,8 @@ def page_main_driver(firefox_driver):
     """Фикстура для инициализации драйвера для страницы page_main"""
 
     page_main_driver = PageMain(firefox_driver)
-    page_main_driver.get_driver(urls.url_global)
-    yield page_main_driver
+    page_main_driver.get_driver(urls.URL_GLOBAL)
+    return page_main_driver
 
 
 @pytest.fixture
@@ -36,13 +36,13 @@ def page_order_driver(firefox_driver):
     """Фикстура для инициализации драйвера для страницы page_order"""
 
     page_order_driver = PageOrder(firefox_driver)
-    page_order_driver.get_driver(urls.url_global)
-    yield page_order_driver
+    page_order_driver.get_driver(urls.URL_GLOBAL)
+    return page_order_driver
 
 @pytest.fixture
 def page_switch_driver(firefox_driver):
     """Фикстура для инициализации драйвера для страницы page_switch"""
 
     page_switch_driver = SwitchPage(firefox_driver)
-    page_switch_driver.get_driver(urls.url_order)
-    yield page_switch_driver
+    page_switch_driver.get_driver(urls.URL_ORDER)
+    return page_switch_driver
